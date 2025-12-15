@@ -1,22 +1,62 @@
-# React + Vite
+# Jotai State Management (Sync & Async)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a **React** application built with **Vite** that demonstrates
+state management using **Jotai (atoms)**.
 
-Currently, two official plugins are available:
+The project focuses on:
+- ✅ **Synchronous Todo state**
+- 🔄 **Asynchronous Todo state**
+- 🧩 Atomic state management with Jotai
+- 📄 Page-based separation for sync and async logic
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It is designed for learning **Jotai fundamentals** and comparing **sync vs async state handling**.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React**
+- **Jotai**
+- **Vite**
+- **JavaScript (ES6+)**
+- **JSON Server (for async todos)**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── atoms/
+│   ├── todo.js          # Single todo atom
+│   └── todos.js         # Todos atoms (sync & async)
+│
+├── pages/
+│   ├── Home.jsx         # Main page
+│   ├── Info.jsx         # Info/About page
+│   ├── InfoSync.jsx     # Sync info page
+│   ├── Sync.jsx         # Sync todo example
+│   └── Async.jsx        # Async todo example
+│
+├── Layout.jsx           # App layout
+├── App.jsx
+├── main.jsx
+└── index.css
 
 
+📝 Features
+🔹 Sync Todo
 
+Add and remove todos synchronously
 
+Instant updates via atoms
 
+No API calls
 
+🔹 Async Todo
+
+Fetch todos asynchronously
+
+Async atoms for API calls
+
+Uses db.json as a mock backend
