@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Ramziya",
+      "status": true
+    },
+    {
+      "id": "1765369856627",
+      "name": "Maga",
+      "status": false
+    },
+    {
+      "id": 1765370748137,
+      "name": "Mijgona",
+      "status": false
+    },
+    {
+      "id": 1765370755365,
+      "name": "Sabrina",
+      "status": false
+    },
+    {
+      "id": 1765370762221,
+      "name": "Polina",
+      "status": false
+    },
+    {
+      "id": 1765370771276,
+      "name": "Damir",
+      "status": false
+    }
+  ]
+}
